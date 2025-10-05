@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '27507157'))
-API_HASH = environ.get('API_HASH', '8c1121dfa9159420a3c9276a1dc00c53')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8342816692:AAE9hsbZ7DU3tcCko08rXJWior0m9ruWlF4")
+API_ID = int(environ.get('API_ID', '25471015'))
+API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8291678017:AAHP-rPbDsrEYLVWYYmpZ6Aru5stfr_60UA")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,22 +29,22 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/0e2bc4c69e7a
 CODE = (environ.get('CODE', 'https://t.me/Hindi_movie_uplod/43'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'https://arlinks.in/'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'arlinks.in'))
 STREAM_API = (environ.get('STREAM_API', 'b0a9ac72d3e476a2fe0a3c166376f4b71ade1644'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hindi_movie_uplod/36'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5547390021').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002558927719').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5492204858').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002406799151').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1807927334').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002510131443')
-auth_grp = environ.get('AUTH_GROUP')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002600085277')
+auth_grp = environ.get('-1002600085277')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002510131443')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002510131443')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002600085277')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002600085277')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
@@ -69,7 +69,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+Y9NcU3DhpvY0YTc1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+Y9NcU3DhpvY0YTc1')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Foxyproxy')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1002558927719'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1002989367095'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+Y9NcU3DhpvY0YTc1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
